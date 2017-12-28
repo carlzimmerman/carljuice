@@ -1,5 +1,7 @@
 <h1> Stats: Alex Gajewski vs. Carl Zimmerman - BTC </h1>
+<h2> $1,000 USD Bet that price of Bitcoin (BTC) will be greater/less than $13,000 on December 22nd, 2027 </h2>
 
+<br>
 Current Price of Bitcoin:
 <br>
 <br>
@@ -9,14 +11,24 @@ Current Price of Bitcoin:
 <br>
 <br>
 
-Time left until the end of the Bet:
+
+Days left until the end of the bet:
 
 <br>
 <br>
 
-<%= DateTime.now %>
+<%= @days_left %>
 
 <br>
 <br>
 
-<%= fin = DateTime.now + 5 * 60; while DateTime.now < fin; puts fin — DateTime.now; sleep 1; end %>
+Who is currently "in the money"?
+<br>
+<br>
+<% if @btc_usd > 13000 %>
+<%= "Carl Zimmerman" %>
+<% end %>
+
+<% if @btc_usd < 13000 %>
+<%= "Alex Gajewski" %>
+<% end %>
