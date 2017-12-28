@@ -1,4 +1,22 @@
-<h1> Hello Bob </h1>
+<h1> Stats: Alex Gajewski vs. Carl Zimmerman - BTC </h1>
 
+Current Price of Bitcoin:
+<br>
+<br>
 
-<%= @test %>
+<%= "$#{@btc_usd}"%>
+
+<br>
+<br>
+
+Time left until the end of the Bet:
+
+<br>
+<br>
+
+<%= DateTime.now %>
+
+<br>
+<br>
+
+<%= fin = DateTime.now + 5 * 60; while DateTime.now < fin; puts fin — DateTime.now; sleep 1; end %>

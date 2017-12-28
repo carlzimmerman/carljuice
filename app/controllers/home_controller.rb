@@ -11,7 +11,11 @@ def index
   response = RestClient.get base_url
   data = JSON.load response
   cool = data["USD"].first
-  @test = JSON.pretty_generate cool
+  @btc_price = JSON.pretty_generate cool
+  @btc_usd = @btc_price[12..20].to_d
+
+
+
 end
 
 def ticker
